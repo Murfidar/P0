@@ -63,8 +63,7 @@ main > #playlist-creator {
 }
 
 .search-section > h2,
-.unwatched-list > h2,
-.watched-list > h2 {
+.video-list > h2 {
     margin-top: 20px;
 }
 
