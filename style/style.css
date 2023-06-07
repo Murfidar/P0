@@ -125,6 +125,17 @@ label {
     outline: none;
 }
 
+.input_inline {
+    display: flex;
+    flex-direction: row;
+}
+.input_inline > input#inputVideoIsComplete {
+    margin-top: 12px;
+}
+.input_inline > label {
+    margin-left: 6px;
+}
+
 #searchVideo {
     position: relative;
 }
