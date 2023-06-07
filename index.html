@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samm-Hub</title>
+    <link rel="icon" type="image/x-icon" href="./style/favicon.ico">
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="icon">
+            <img class="icon-pict" src="./style/Asset 2.png">
+            <h2 id="logo">SAMM-Hub</h2>
+        </div>
+        <div id="playlist-creator">
+            <section class="input-section">
+                <h2>Input Your Video</h2>
+                <form id="inputFilm">
+                    <div class="input">
+                    <label for="inputVideoTitle">Video Title</label>
+                    <input id="inputVideoTitle" type="text" required>
+                    </div>
+                    <div class="input">
+                    <label for="inputVideoGenre">Genre</label>
+                    <select id="genre">
+                    <optgroup id="genreVideo">
+                        <option value="Humour">Humour</option>
+                        <option value="Music">Music</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Sci-fi">Sci-fi</option>
+                        <option value="Japanese">Japanese</option>
+                    </optgroup>
+                    </select>
+                    </div>
+                    <div class="input">
+                    <label for="inputVideoLink">Youtube Link</label>
+                    <input id="inputVideoLink" type="text" required>
+                    </div>
+                    <div class="input_inline">
+                    <label for="inputVideoIsComplete">Already Watched</label>
+                    <input id="inputVideoIsComplete" type="checkbox">
+                    </div>
+                    <button id="videoSubmit" type="submit">Input the video to playlist</button>
+                </form>
+            </section>
+        </div>
+
+        <div>
+            <p style="color:white">container section</p>
+        </div>
+    </main>
+    <section id="embedded-video">
+        <p>vid</p>
+    </section>
+</body>
+</html>
