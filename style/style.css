@@ -196,6 +196,7 @@ label {
     border: none;
     outline: none;
     box-shadow: 0 1px 1px 1px rgb(57, 57, 57);
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -208,6 +209,7 @@ label {
     border: none;
     outline: none;
     box-shadow: 0 1px 1px 1px rgb(57, 57, 57);
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
 
