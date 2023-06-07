@@ -11,7 +11,7 @@ const videoList = [{
 
 function makeVideo(videoObject) {
     const undo = 'Not Yet Watched';
-    const alreadyRead = 'Already Watched'
+    const alreadyWatched = 'Already Watched'
     const deletes = 'Delete Video'
 
     const videoTitle = document.createElement('h3');
@@ -57,7 +57,7 @@ function makeVideo(videoObject) {
 
         const alreadyButton = document.createElement('button');
         alreadyButton.classList.add('green');
-        alreadyButton.innerHTML = alreadyRead;
+        alreadyButton.innerHTML = alreadyWatched;
 
 
         const deleteButton = document.createElement('button');
