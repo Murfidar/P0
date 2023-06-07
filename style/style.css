@@ -40,7 +40,7 @@ main > .icon {
 
 .icon-pict {
     height: 5rem;
-    weight: 5rem
+    width: 5rem
 }
 
 .icon > #logo {
@@ -54,10 +54,19 @@ main > #playlist-creator {
     color: #E0E0E0;
 }
 
-.input-section > h2 {
+.input-section > h2,
+.search-section > h2,
+.unwatched-list > h2,
+.watched-list > h2 {
     text-align: center;
     margin-bottom: 10px;
     text-shadow: 0px 1px 2px #232323;
+}
+
+.search-section > h2,
+.unwatched-list > h2,
+.watched-list > h2 {
+    margin-top: 20px;
 }
 
 #playlist-creator > .input-section {
@@ -65,7 +74,8 @@ main > #playlist-creator {
     padding-top: 20px;
 }
 
-#playlist-creator > .input-section {
+#playlist-creator > .input-section,
+#playlist-creator > .search-section {
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -95,20 +105,46 @@ label {
 
 #inputVideoTitle,
 #genre,
-#inputVideoLink {
+#inputVideoLink,
+#searchVideoTitle {
     width: 90%;
     margin-top: 4px;
     border-radius: 10px;
     padding: 4px;
     transition: 0.5s;
+    display: block;
+    border: none;
+    box-shadow: 0 5px 8px 3px black;
 }
 
-#inputVideoTitle:hover,
-#genre:hover,
-#inputVideoLink:hover {
+#inputVideoTitle:focus,
+#genre:focus,
+#inputVideoLink:focus,
+#searchVideoTitle:focus {
     width: 100%;
+    outline: none;
 }
 
+#searchVideo {
+    position: relative;
+}
+
+
+#searchSubmit {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+#searchSubmit > i {
+    color: black;
+}
 #embedded-video > p {
     margin-top: 200px;
     text-align: center;

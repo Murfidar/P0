@@ -23,7 +23,7 @@
                 <form id="inputFilm">
                     <div class="input">
                     <label for="inputVideoTitle">Video Title</label>
-                    <input id="inputVideoTitle" type="text" required>
+                    <input id="inputVideoTitle" placeholder="Input Video Title..." type="text" required>
                     </div>
                     <div class="input">
                     <label for="inputVideoGenre">Genre</label>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="input">
                     <label for="inputVideoLink">Youtube Link</label>
-                    <input id="inputVideoLink" type="text" required>
+                    <input id="inputVideoLink" placeholder="Input Video Link..." type="text" required>
                     </div>
                     <div class="input_inline">
                     <label for="inputVideoIsComplete">Already Watched</label>
@@ -48,10 +48,20 @@
                     <button id="videoSubmit" type="submit">Input the video to playlist</button>
                 </form>
             </section>
-        </div>
-
-        <div>
-            <p style="color:white">container section</p>
+            <section class="search-section">
+                <h2>Find Your Video</h2>
+                <form id="searchVideo">
+                    <label for="searchVideoTitle">Title</label>
+                    <input id="searchVideoTitle" placeholder="Search..." type="text">
+                    <button id="searchSubmit" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </section>
+            <section class="unwatched-list">
+                <h2>Not Yet Watched</h2>
+            </section>
+            <section class="watched-list">
+                <h2>Already Watched</h2>
+            </section>
         </div>
     </main>
     <section id="embedded-video">
