@@ -33,16 +33,8 @@ function makeVideo(videoObject) {
     const container = document.createElement('article');
     container.classList.add('video-item');
     container.classList.add('active');
-    container.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.07), 0 15px 40px rgba(0, 0, 0, 0.07)"
-    container.style.width = "100.6%"
-    container.style.transition = "1s"
+
     container.append(videoContainer);
-    requestAnimationFrame(() =>
-        setTimeout(() => {
-            container.style.boxShadow = "0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.2)"
-            container.style.width = "100%"
-        })
-    );
 
     if (videoObject.isComplete) {
         const actionDiv = document.createElement('div');
