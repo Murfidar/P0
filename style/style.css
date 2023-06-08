@@ -123,6 +123,7 @@ label {
     outline: none;
 }
 
+
 .input_inline {
     display: flex;
     flex-direction: row;
@@ -140,8 +141,8 @@ label {
 
 
 #searchSubmit {
-    position: absolute;
-    top: 17px;
+    position:absolute;
+    top: -9px;
     right: 10px;
     width: 50px;
     height: 100%;
@@ -153,6 +154,21 @@ label {
 
 #searchSubmit > i {
     color: black;
+}
+
+.radio-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.radio-button-2 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#search-genre {
+    margin-left: 5px;
+    margin-right: -2px;
 }
 
 .video-item {
@@ -216,4 +232,26 @@ label {
 #embedded-video > p {
     margin-top: 200px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1318px) {
+    .radio-button,
+    .radio-button-2 {
+        font-size: 0.8rem;
+    }
+
+    #searchSubmit {
+        top: -6px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .radio-button,
+    .radio-button-2 {
+        font-size: 0.7rem;
+    }
+
+    #searchSubmit {
+        top: -7px;
+    }
 }
